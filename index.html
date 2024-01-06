@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List - Developed by AMM. Hathil Thahee</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-center bg-no-repeat h-screen flex flex-col items-center justify-center select-none"
+    style="background-image: url(./assets/images/bg.jpg);"
+  >
+    <!-- Main Container -->
+    <div class="max-w-xs">
+      <!-- input section -->
+      <div class="bg-blue-300 px-4 py-8 mb-5 rounded flex">
+        <input
+          type="text"
+          placeholder="Enter your task"
+          autofocus
+          class="outline-none p-2 w-96 mr-2 text-sm rounded"
+        />
+        <button
+          type="button"
+          id="addBtn"
+          class="bg-blue-500 py-1 px-4 rounded text-white font-semibold text-lg"
+        >
+          ADD
+        </button>
+      </div>
+
+      <!-- Display tasks -->
+      <div id="taskList" class="bg-blue-300 px-4 py-8 rounded h-80 overflow-auto">
+        <ul>
+
+        </ul>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
